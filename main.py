@@ -1,5 +1,3 @@
-
-
 class User:
     name = ""
     surname = ""
@@ -11,10 +9,14 @@ class User:
         self.surname = surname
         self.age = age
         self.email = email
+
     def set(self, name, surname, age):
         self.name = name
         self.surname = surname
         self.age = age
+
+    def action(self):
+        print(f"Siu")
 
     def printAll(self):
         print(f"Пользователь: {self.name}, его возраст {self.age}")
@@ -27,4 +29,3 @@ bob = User("Bob", "Marley", 18, "bob@gmail.com")
 bob.printAll()
 
 print('Hello!')
-
